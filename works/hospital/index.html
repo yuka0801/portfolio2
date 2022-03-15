@@ -14,7 +14,7 @@
 
   <!-- 自作css -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/access.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
 
 <body>
   <header>
-    <h1><img src="image/logo.png" alt="しますえ眼科" class="logo"></h1>
+    <h1><a href="#"><img src="image/logo.png" alt="しますえ眼科" class="logo"></a></h1>
     <nav id="gnavi" class="gnavi">
       <ol class="menu">
         <li class="menu__single"><a href="index.html"><img src="image/home.svg" alt="home画像" class="home-logo"><span class="span2">HOME</span></a>
@@ -93,63 +93,96 @@
     </nav>
   </header>
 
+  <div class="big-img"><img src="image/hospital2.jpg" alt=""></div>
+
   <div class="top-img">
-    <h1>アクセス</h1>
+    <div class="wrapper">
+      <img src="image/schedule.png" alt="" class="top-img-small1">
+      <div class="top-img-small2">
+        <a href=""><img src="image/tel.png" alt="" class="img-tel"></a>
+        <a href="contact.html"><img src="image/mail.png" alt=""></a>
+      </div>
+    </div>
   </div>
 
-  <section id="access">
-    <h2>
-      <div class="wrapper">当院へのアクセス</div>
-    </h2>
+  <div class="wrapper">
+    <section class="news">
+      <h2>新着情報<span>一覧へ</span></h2>
+      <dl>
+        <dt><time datetime="2021-12-25">2021/12/25</time><span>NEW</span></dt>
+        <dd>年末年始のお休みについて<br>下記の日程はお休み致します。<br>
+          2021/12/30~2022/1/2</dd>
+      </dl>
+      <dl>
+        <dt><time datetime="2021-12-13">2021/12/13</time><span>NEW</span></dt>
+        <dd>眼鏡処方について<br>下記の日程でご予約承ります。<br>
+          月曜：終日および水曜：午後<br>
+          時間がかかる場合がございますので事前にお問い合わせの上、ご予約くださいますようお願い申し上げます。<br>
+          なお、都合により日程が急遽変更になる場合がございます。
+        </dd>
+      </dl>
+      <dl>
+        <dt><time datetime="2021-10-9">2021/10/9</time><span>NEW</span></dt>
+        <dd>３密を避けるため皆さまにご予約のご協力をお願い申し上げます。<br>
+          ※一週間以内にご自身やご家族に発熱、倦怠感、咳などの症状がある方は来院をお控えください。体調に不安がある方は来院前に必ずお電話ください。お付き添いは最小限の人数でお願い致します。</dd>
+      </dl>
+      <dl>
+        <dt><time datetime="2021-8-27">2021/8/27</time><span>NEW</span></dt>
+        <dd>お知らせ<br>診察時間の変更がある場合がございます。当日受診を希望される方は必ず来院前にご連絡頂けますようお願い申し上げます。</dd>
+      </dl>
+    </section>
+  </div>
 
+  <section class="guide">
     <div class="wrapper">
-      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.1668584322324!2d132.46142641522425!3d34.39710458051351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa207f3caf871%3A0x2c8c6fd82aa4399a!2z44CSNzMwLTAwMTMg5bqD5bO255yM5bqD5bO25biC5Lit5Yy65YWr5LiB5aCA77yU4oiS77yR77yVIOOCouODvOODkOODs-ODk-ODpeODvOWFq-S4geWggCAz6ZqO!5e0!3m2!1sja!2sjp!4v1646198071578!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+      <div class="guide-text-left">
+        <h2>お早めの来院を</h2>
+        <p>ご相談が早ければ早いほど、治療の負担が軽減されます。
+          <p>些細なことであってもご気軽に当院までご相談ください。</p>
+      </div>
+      <div class="guide-text-right">
+        <a href="menu.html">
+          <h2>診療のご案内</h2>
+          <p>症状別に考えられる病気や対処法をご案内します。</p>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section id="time">
-    <h2>
-      <div class="wrapper">診療時間</div>
-    </h2>
+  <section class="symptom">
+    <ul>
+      <li><a href="menu.html#sick1"><img src="image/symp1.png" alt="白内障"></a></li>
+      <li><a href="menu.html#sick2"><img src="image/symp2.png" alt="緑内障"></a></li>
+      <li><a href="menu.html#sick3"><img src="image/symp3.png" alt="加齢黄斑変性症"></a></li>
+      <li><a href="menu.html#sick4"><img src="image/symp4.png" alt="糖尿病網膜症"></a></li>
+      <li><a href="menu.html#sick5"><img src="image/symp5.png" alt="花粉症"></a></li>
+      <li><a href="menu.html#sick6"><img src="image/symp6.png" alt="コンタクト"></a></li>
+    </ul>
+  </section>
 
-    <div class="table-box">
-      <table>
-        <tr>
-          <th class="th-left">診療時間</th>
-          <th>月</th>
-          <th>火</th>
-          <th>水</th>
-          <th>木</th>
-          <th>金</th>
-          <th>土</th>
-          <th>日</th>
-          <th>祝</th>
-        </tr>
-        <tr>
-          <th class="th-left">9:00-12:00</th>
-          <th class="color">●</th>
-          <th class="color">●</th>
-          <th class="color">●</th>
-          <th>休</th>
-          <th class="color">●</th>
-          <th class="color">●</th>
-          <th>休</th>
-          <th>休</th>
-        </tr>
-        <tr>
-          <th class="th-left">14:00-17:30</th>
-          <th class="color">●</th>
-          <th class="color">●</th>
-          <th class="color">●</th>
-          <th>休</th>
-          <th class="color">●</th>
-          <th>休</th>
-          <th>休</th>
-          <th>休</th>
-        </tr>
-      </table>
+  <section class="greeting">
+    <div class="wrapper">
+      <div class="greeting-textbox">
+        <div class="greeting-title">
+          <h2>ごあいさつ</h2>
+          <h3>GREETING</h3>
+        </div>
+        <p class="chatch">患者様一人ひとりに寄り添える<br>眼科専門医院を目指して</p>
+      </div>
+      <p>当院が心がけているのは、何も異常がなかったと安心してお帰りいただけるような、眼科専門医院です。目に少しでも違和感を感じられたらすでに病気が進行している可能性もあります。ぜひ、常日頃から定期健診を受けてみてください。
+      </p>
     </div>
+  </section>
 
+  <section class="map-area">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.1668584322324!2d132.46142641522425!3d34.39710458051351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa207f3caf871%3A0x2c8c6fd82aa4399a!2z44CSNzMwLTAwMTMg5bqD5bO255yM5bqD5bO25biC5Lit5Yy65YWr5LiB5aCA77yU4oiS77yR77yVIOOCouODvOODkOODs-ODk-ODpeODvOWFq-S4geWggCAz6ZqO!5e0!3m2!1sja!2sjp!4v1646199124667!5m2!1sja!2sjp" width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <div class="wrapper">
+      <div class="map-text">
+        <p>所在地：〒000-0000</p>
+        <p>広島県広島市○○区○丁目○-○</p>
+      </div>
+    </div>
   </section>
 
   <footer>
