@@ -23,26 +23,10 @@ $('.slider').slick('slickPlay');
 });
 
 
-
-// section .make
-
-{
-    $('.thumb').on('click', function (event) {
-        //data-*属性から値の取得
-        const newImg = $(event.currentTarget).data('image');
-
-        //属性の書きか会え
-        $('#bigimg').attr('src', newImg);
-    });
-    
-}
-
 // section .news
 
 {
 	$('.number').on('click', function(event){
-        // $('.tab').removeClass('active');
-        // $(event.currentTarget).addClass('active');
 
     //中身の変更
     //その１ クリックした要素のdata-pairの値を取得
@@ -56,6 +40,21 @@ $('.slider').slick('slickPlay');
     
     });
 
+}
+
+
+
+// section .make
+
+{
+    $('.thumb').on('click', function (event) {
+        //data-*属性から値の取得
+        const newImg = $(event.currentTarget).data('image');
+
+        //属性の書きか会え
+        $('#bigimg').attr('src', newImg);
+    });
+    
 }
 
 

@@ -38,8 +38,6 @@ h2::after {
   content: '=';
   color: #fff;
   margin: 0 15px;
-  /* display: inline-block;
-  background-image: url(../img/equql.png); */
 }
 
 h3 {
@@ -65,13 +63,10 @@ header
 h1 {
   position: absolute;
   z-index: 2;
-  top: 30px;
-  left: 30px;
-  /* transform: translate(-50%, -50%); */
+  top: 10%;
+  left: 10%;
   text-align: center;
-  width: 15%;
-  height: auto;
-  /* font-size: 6vw; */
+  width: 13%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
@@ -97,8 +92,6 @@ ul {
   position: relative;
   z-index: 1;
   /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-  /* min-height: 100vh; */
-  /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
 }
 
 .slider img {
@@ -130,7 +123,7 @@ info
 custom
 ===================================*/
 .cus {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .cus-item {
@@ -149,7 +142,7 @@ custom
 }
 
 .cus-item+.cus-item {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /*===================================
@@ -157,7 +150,7 @@ news
 ===================================*/
 
 .news {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .news h2 {
@@ -210,7 +203,7 @@ make
 ===================================*/
 
 .make {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .make h2 {
@@ -229,11 +222,10 @@ make
   max-width: 480px;
 }
 
-.bigimg-container,
-thumbs {
+/* .bigimg-container {
   margin-bottom: 5px;
   text-align: top;
-}
+} */
 
 .thumbs {
   margin-top: 50px;
@@ -260,6 +252,12 @@ thumbs {
 
 .thumbs li {
   width: 90px;
+  border-radius: 50%;
+}
+
+.thumbs li:hover {
+  border: 3px #fff solid;
+  box-sizing: content-box;
 }
 
 /*==================================
@@ -267,7 +265,7 @@ access
 ===================================*/
 
 .access {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .access h2 {
@@ -298,7 +296,7 @@ sns
 ===================================*/
 
 .sns h2 {
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .sns p {
@@ -350,21 +348,16 @@ top-button
 
 @media (max-width:840px) {
 
-    /* 共通 */
+  /* 共通 */
 
-    h3 {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-
-  /* header */
-
-  h1 {
-    width: 20%;
+  h3 {
+    font-size: 18px;
   }
+
+  p {
+    font-size: 16px;
+  }
+
 
   /* cus */
 
@@ -397,6 +390,7 @@ top-button
 
   h1 {
     width: 25%;
+    left: 13%;
   }
 
   .top-b {
@@ -433,19 +427,19 @@ top-button
     display: block;
   }
 
-    /*news*/
+  /*news*/
 
-    .t-br {
-      display:block;
-    }
+  .t-br {
+    display: block;
+  }
 
-    .news-item {
-      text-align: center;
-    }
+  .news-item {
+    text-align: center;
+  }
 
-    .news-item time {
-      margin-right: 0px;
-    }
+  .news-item time {
+    margin-right: 0px;
+  }
 
   .news-item p {
     margin: 0 auto;
@@ -478,17 +472,22 @@ top-button
 レスポンシブ　　　320
 ===================================*/
 
-@media (max-width:320px) {
+@media (max-width:375px) {
 
   p {
     font-size: 15px;
+  }
+
+  h1 {
+    top: 6%;
+    width: 30%;
   }
 
   h2 {
     font-size: 20px;
   }
 
-  h3{
+  h3 {
     font-size: 16px;
   }
 
