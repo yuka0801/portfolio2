@@ -429,6 +429,10 @@ section.contact
   font-size: 40px;
 }
 
+.second-p {
+  margin-bottom: 30px;
+}
+
 /*------------------------------
 レスポンシブ max-width 1160
 --------------------------------*/
